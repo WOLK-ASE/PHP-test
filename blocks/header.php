@@ -4,7 +4,7 @@
     <nav class="my-2 my-md-0 mr-md-3">
         <a class="p-2 text-dark" href="./index.php">Home</a>
         <a class="p-2 text-dark" href="./about.php">Contact</a>
-        <a class="p-2 text-dark" href="#">About</a>
+        <a class="p-2 text-dark" href="./connection.php">Connection</a>
     </nav>
     <?php
     if ($_COOKIE['user'] == 'correct'):?>
