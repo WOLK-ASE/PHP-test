@@ -5,6 +5,7 @@
         <a class="p-2 text-dark" href="./index.php">Home</a>
         <a class="p-2 text-dark" href="./about.php">Contact</a>
         <a class="p-2 text-dark" href="./connection.php">Connection</a>
+        <a class="p-2 text-dark" href="./testPage2.php">Test Page 2</a>
     </nav>
     <?php
     if ($_COOKIE['user'] == 'correct'):?>

@@ -1,14 +1,25 @@
 <?php
+$host = '127.0.0.1';
 
-$host = "127.0.0.1";
-$database = "wolk_ase";
-$user = "wolkase";
-$password = "Ase123212";
+$db   = 'wolk_ase';
 
-$connect = new mysqli($host, $user, $password, $database);
+$user = 'Test0';
 
-if ($connect->connect_error) {
-    die("Connection failed: " . $connect->connect_error);
-}
+$pass = 'Test12';
 
-echo ("Connection successful");
+
+$charset = 'utf8';
+
+$connect = new MySQLi($host, $user, $pass, $db);
+
+//Or
+
+$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+
+$pdo = new PDO($dsn, $user, $pass);
+
+
+
+
+
+
