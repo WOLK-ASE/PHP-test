@@ -15,8 +15,8 @@ function fetchAll($pdo)
 
     $stmt->execute();
 
-    return $stmt->fetchAll();
+    $result = $stmt->fetchAll(PDO::FETCH_OBJ);
 
-//    dd($result);
+    dd($result);
 }
 

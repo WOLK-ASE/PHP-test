@@ -14,12 +14,13 @@ $connect = new MySQLi($host, $user, $pass, $db);
 
 //Or
 
-$dsn = "mysql:host=$host;dbname=$db;charset=$charset";
+try {
+    $dsn = "mysql:host=$host;dbname=$db;charset=$charset";
 
-$pdo = new PDO($dsn, $user, $pass);
-
-
-
+    $pdo = new PDO($dsn, $user, $pass);
+} catch (PDOException $e) {
+   die($e->getMessage());
+};
 
 
 

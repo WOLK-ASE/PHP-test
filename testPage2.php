@@ -17,6 +17,5 @@
 fetchAll($pdo);
 ?>
 
-
 </body>
 </html>
