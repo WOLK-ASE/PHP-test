@@ -21,4 +21,4 @@ else if(strlen($message) < 10)
 
 
     echo '<script>alert("Email was sent successfully");</script>';
-    echo '<script>location.href="about.php";</script>';
+    echo '<script>location.href="../contact.php";</script>';
