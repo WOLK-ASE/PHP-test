@@ -20,4 +20,18 @@ class QueryBuilder
 
         return $result;
     }
+    function newUser ($name, $surname, $mail, $password)
+    {
+//        $sql = "INSERT INTO users (name, surname, mail) VALUES (:name, :surname, :mail)";
+////
+////        $stmt = $this->pdo->prepare($sql);
+////
+////        $stmt->execute();
+
+        $sql = "INSERT INTO users (name, surname, mail, password) VALUES (?,?,?,?)";
+
+        $stmt= $this->pdo->prepare($sql);
+
+        $stmt->execute([$name, $surname, $mail, $password]);
+    }
 }

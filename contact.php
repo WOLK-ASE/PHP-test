@@ -10,23 +10,9 @@
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-<!--header-->
-<?php require "./blocks/header.php" ?>
-<!--header-->
+<?php
+require './views/contact.view.php';
+?>
 
-    <div class="container">
-        <h3>Contact form</h3>
-        <form action="mail/check.php" method="post">
-            <input type="email" name="email" placeholder="Enter E-mail" class="form-control"><br>
-            <textarea name="message" class="form-control" placeholder="Enter your message" cols="30" rows="10"></textarea><br>
-            <button type="submit" name="send" class="btn btn-success">Submit</button>
-        </form>
-    </div>
-
-
-
-<!--footer-->
-<?php require "./blocks/footer.php" ?>
-<!--footer-->
 </body>
 </html>
