@@ -1,20 +1,20 @@
 
 <?php
 
-$database = require "./bootstrap.php";
-
-$name = $_POST['name'];
-
-$surname = $_POST['surname'];
-
-$mail = $_POST['mail'];
-
-$password = $_POST['password'];
-
-$password_2 = $_POST['password_2'];
-
 function reg_check ()
 {
+    $database = require "./bootstrap.php";
+
+    $name = $_POST['name'];
+
+    $surname = $_POST['surname'];
+
+    $mail = $_POST['mail'];
+
+    $password = $_POST['password'];
+
+    $password_2 = $_POST['password_2'];
+
     if( isset($_POST['send'])) {
 
         $errors = array();
@@ -40,7 +40,9 @@ function reg_check ()
         }
         if ( empty($errors))
         {
+            $password = md5($password);
             $database->newUser($name, $surname, $mail, $password);
+            echo '<div class="text-center" style="color:green; font-size: 30px ">Successfully Registered</div><hr>';
         }
         else
         {

@@ -27,7 +27,7 @@
                     <h4 class="my-0 font-weight-normal"><?= $fruit->Fruit; ?></h4>
                 </div>
                 <div class="card-body">
-                    <img style="height: 150px; width: 100%" src="./img/<?php echo (++$i) ?>.jpg" alt="img-thumbnail">
+                    <img style="width: 100%" src="./img/<?php echo (++$i) ?>.jpg" alt="img-thumbnail">
                     <ul class="list-unstyled mt-3 mb-4">
                         <li><strong>Name - </strong><?= $fruit->Fruit;?>
                         </li>
